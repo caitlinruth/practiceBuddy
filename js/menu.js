@@ -1,4 +1,4 @@
-const container = document.querySelector(".container")
+const menucontainer = document.querySelector(".menucontainer")
 const features = [
   { name: "keyboard", image: "images/piano.png" },
   { name: "planner", image: "images/planner.png" },
@@ -14,14 +14,14 @@ const showFeatures = () => {
       ({ name, image }) =>
         (output += `
                 <div class="card">
-                  <a class"card--link" href="/${name}">
+                  <a class"card--link" href="/tools/${name}.html">
                   <img class="card--avatar" src=${image} />
                   <h2 class="card--title">${name}</h2>
                   </a>
                 </div>
                 `)
     )
-    container.innerHTML = output
+    menucontainer.innerHTML = output
   }
   
   document.addEventListener("DOMContentLoaded", showFeatures)

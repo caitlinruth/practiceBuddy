@@ -1,18 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,700&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
-  background: #fdfdfd;
-  font-family: "Nunito", sans-serif;
+  background-image: url("../images/vecteezy_abstract-music-seamless-pattern-background-vector_.jpg");
+  font-family: "Josefin Sans", sans-serif;
   font-size: 1rem;
 }
 main {
   max-width: 900px;
-  margin: auto;
-  padding: 0.5rem;
+  padding: 1rem;
   text-align: center;
 }
 nav {
@@ -28,12 +28,32 @@ li {
   margin-right: 1rem;
 }
 h1 {
-  color: #640ab8;
+  color: #222;
   margin-bottom: 0.5rem;
   letter-spacing: 0.1rem;
+  font-weight: 600;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 10px;
+  margin: auto;
+  align-items: center;
+  width: 15rem;
+  height: 2rem auto;
+  padding: 0.5rem;
+  background: #fff;
+  font-size: 1.7rem;
 }
 
+/* general container styling */
 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+/* menu card styling */
+.menucontainer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     grid-gap: 1rem;
@@ -61,11 +81,11 @@ h1 {
   }
   .card--title {
     color: #222;
-    font-weight: 700;
+    font-weight: 400;
     text-transform: lowercase;
-    font-family: "Nunito", sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     letter-spacing: 0.07rem;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     margin-top: 0rem;
     margin-bottom: 1rem;
   }
@@ -74,3 +94,446 @@ h1 {
     text-decoration: none;
   }
 
+  /* metronome styling */
+input[type=range] {
+  -webkit-appearance: none;
+  background-color: transparent;
+  width: 60%;
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+input[type=range]:-focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #D55576;
+  cursor: pointer;
+  margin-top: -16px;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 1px;
+  background-color: rgb(163, 163, 163);
+}
+
+.metronome {
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25rem;
+  height: 42rem;
+  background: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 40px;
+  overflow: hidden;
+}
+.bpm-display {
+  width: 100%;
+  text-align: center;
+  color: #222;
+  font-weight: bold;
+}
+.bpm-display .tempo {
+  font-size: 4rem;
+}
+.tempo-text {
+  font-size: 1.4rem;
+  text-align: center;
+}
+.tempo-settings {
+  display: flex;
+  justify-content: space-between;
+}
+.tempo-settings .adjust-tempo-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 2rem;
+  border: 2px solid rgb(163, 163, 163);
+  text-align: center;
+  cursor: pointer;
+}
+.tempo-settings .adjust-tempo-btn:hover {
+  background-color: #222;
+  color: #fff;
+}
+.tempo-settings .decrease-tempo {
+  line-height: 44px;
+}
+.tempo-settings .increase-tempo {
+  line-height: 44px;
+}
+
+.start-stop {
+  width: 100px;
+  height: 100px;
+  font-size: 1.7rem;
+  text-align: center;
+  background-color: #222;
+  border-radius: 50%;
+  color: #fff;
+  line-height: 110px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.start-stop:hover {
+  background-color: rgb(63, 63, 63);
+}
+
+.measures {
+  display: flex;
+  justify-content: center;
+  font-size: 1.7rem;
+}
+.measures .stepper {
+  width: 50px;
+  height: 50px;
+  border: 2px solid rgb(206, 206, 206);
+  border-radius: 50%;
+  text-align: center;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.measures .stepper:hover {
+  background-color: rgb(63, 63, 63);
+  color: #fff;
+}
+.measures .add-beats {
+  line-height: 45px;
+}
+.measures .subtract-beats {
+  line-height: 45px;
+}
+.measure-count {
+  line-height: 50px;
+}
+.beats-per-measure-text {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 40px;
+}
+
+/* ipa styling */
+.ipa-sheet {
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25rem;
+  height: 42rem;
+  background: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 40px;
+  overflow: hidden;
+}
+
+.consonants .symbolbutton {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.8rem;
+  border: 1px solid #CCC;
+  height: 2.5rem;
+  width: 2.5rem;
+  float: left;
+  justify-content: space-around;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.consonants .symbolbutton:hover {
+  background-color: #D7AAA3;
+}
+
+.vowels .symbolbutton {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.8rem;
+  border: 1px solid #CCC;
+  height: 2.5rem;
+  width: 2.5rem;
+  float: left;
+  justify-content: space-around;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.vowels .symbolbutton:hover {
+  background-color: #D7AAA3;
+}
+
+.ipa-result {
+  display: flex;
+  flex-direction: column;
+  height: 10rem;
+  text-align: left;
+}
+
+.ipa-result #result-symbol {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.8rem;
+  line-height: 4rem;
+}
+
+.ipa-result #description {
+  font-size: 1.3rem;
+  line-height: 3rem;
+}
+
+.ipa-result #example-word {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+/* keyboard styling */
+.piano-page {
+  user-select: none;
+  display: flex;
+  justify-content: space-between;
+  width: 25rem;
+  height: 42rem;
+  background: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 40px;
+  overflow: hidden;
+}
+
+.keyboard {
+  display: flex;
+  flex-direction: column;
+}
+
+.white {
+  width: 320px;
+  height: 85px;
+  background-color: white;
+  border: 1px solid #000;
+  border-radius: 3%;
+}
+
+.white.active {
+  background-color: #CCC;
+}
+
+.black {
+  width: 215px;
+  height: 60px;
+  background-color: black;
+  margin-top: -30px;
+  margin-bottom: -30px;
+  z-index: 2;
+}
+
+.black.active {
+  background-color: #222;
+}
+
+/* planner styling */
+.planner {
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25rem;
+  height: 42rem;
+  background: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 40px;
+  overflow: hidden;
+}
+
+/* STYLYING INPUT ELEMENT AND TH EBUTTON */
+form{
+  display: flex;
+  min-height: 15vh;
+  justify-content: center;
+  align-items: center;
+}
+
+form input {
+  font-family: 'Josefin Sans'
+}
+
+form input, form button {
+  padding: 0.4rem;
+  font-size: 1.2rem;
+  background: white;
+  border: none;
+}
+form button{
+  color: #c065c0;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* STYLING DROPDOWN */
+select{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+}
+.select{
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+select{
+  color: #c065c0;
+  width: 8rem;
+  cursor: pointer;
+  padding: 0.7rem;
+}
+.select::after{
+  content: "\25bc";
+  position: absolute;
+  color: #c065c0;
+  top: 7px;
+  right: 6px;
+  pointer-events: none;
+}
+.select:hover::after{
+ color: #583429;
+}
+
+/* STYLING CONTAINER WHERE THE TASKS ARE SHOWN */
+.todo_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todo_list{
+  min-width: 40%;
+  list-style: none;
+  display: block;
+}
+
+.todo{
+  margin: 5px auto;
+  background: white;
+  color: #000000;
+  display: flex;
+  font-size: 1.2rem;
+  padding: 0.3rem;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+.todo li {
+  flex: 1;
+}
+
+/* STYLING THE BUTTONS ON THE TASKS  */
+.complete_btn, 
+.delete_btn{
+  padding: 0.5rem;
+  background: #ff3700;
+  color: white;
+  border: none;
+  margin-left: 0.2rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.complete_btn{
+  background: rgb(67, 179, 67);
+}
+.complete_btn:active{
+  background: green;
+}
+
+.delete_btn:active{
+  background: #b65337;
+}
+
+.fa-trash,
+.fa-check{
+  pointer-events: none;
+}
+
+/* STYLING TASK THAT IS COMPLETED */
+.completedItem{
+  text-decoration: line-through;
+  opacity: 0.5;
+  transform: scale(0.96);
+}
+/* DELETING THE TASKS */
+.fall{
+  transform: translateY(4rem) scale(0.4) rotateZ(20deg);
+  opacity: 0;
+}
+
+
+/* translation styling */
+.translations {
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25rem;
+  height: 42rem;
+  background: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 40px;
+  overflow: hidden;
+}
+
+/* dictionary styling */
+.dictionary {
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25rem;
+  height: 42rem;
+  background: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 40px;
+  overflow: hidden;
+}
+
+.dictsearchbtn {
+  cursor: pointer;
+}
+
+.info-text {
+  line-height: 1.6rem;
+  font-size: 1.35rem;
+}
+
+.result {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  height: 16rem;
+}
+
+#searchterm {
+  font-size: 1.2rem;
+}
+
+.result #word {
+  line-height: 4rem;
+  font-style: italic;
+}
+
+.result #meaning {
+  line-height: 1.5rem;
+}

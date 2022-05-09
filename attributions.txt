@@ -1,0 +1,28 @@
+#bg image
+<a href="https://www.vecteezy.com/free-vector/music">Music Vectors by Vecteezy</a>
+
+#icons
+
+
+#metronome 
+big thanks to 'Music and Coding' on YouTube and GitHub
+https://github.com/musicandcode
+https://www.youtube.com/watch?v=f6dwSJ_n1cg
+Woodblock sound:
+https://freewavesamples.com/woodblock
+The second click is this woodblock sound adjusted down in pitch.
+
+#keyboard 
+big thanks to 'Web Dev Simplified' on YouTube and GitHub
+https://www.youtube.com/watch?v=vjco5yKZpU8
+
+#ipa guide
+big thanks to the IPA https://www.internationalphoneticassociation.org/
+all audio clips are from wikipedia with GNU licencing
+
+#planner
+big thanks to
+https://suryashakti1999.medium.com/to-do-list-app-using-javascript-for-absolute-beginners-13ea9e38a033
+and maybe...?
+https://www.codewithrandom.com/2021/09/countdown-timer-html-javascript-free.html
+https://www.cssscript.com/circular-countdown-timer-javascript-css3/

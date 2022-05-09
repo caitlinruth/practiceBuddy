@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planner</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+    <main>
+        <div id="logo">      
+            <a class="logo-return" href="../index.html">
+              <h1>practiceBuddy</h1>
+            </a>
+        </div>
+        <div class="container">
+            <div class="planner">
+                <div class="info-text">Type tasks into the box to add them to your practice plan</div>
+                    <form>
+                        <input type="text" placeholder="Add a practice prio" class="todo_input" />
+                        <button class="todo_button" type="submit">
+                            <i class="fas fa-plus-square"></i>
+                        </button>
+                    </form>
+                    <div class="todo_container">
+                        <ul class="todo_list"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../js/planner.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <main>
+        <div id="logo">      
+            <a class="logo-return" href="../index.html">
+              <h1>practiceBuddy</h1>
+            </a>
+        </div>
+        <div class="container">
+            <div class="dictionary">
+                <h2>dictionary of musical terms</h2>
+                <div><p class="info-text">Type a musical term and click the search button to display its translation in English</p>
+                <br />
+                <div class="search">
+                    <input type="text" placeholder="search a word" required spellcheck="false" id="searchterm">
+                    <button class="dictsearchbtn" onclick="getMeaning();"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            <div class="result">
+                <p id="word"></p>
+                <p id="meaning"></p>
+            </div>
+        </div>
+    </main>   
+    <script src="../js/dictionary.js"></script> 
+</body>
+</html>
