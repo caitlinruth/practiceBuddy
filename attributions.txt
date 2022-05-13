@@ -1,11 +1,17 @@
 #bg image
-<a href="https://www.vecteezy.com/free-vector/music">Music Vectors by Vecteezy</a>
+https://www.vecteezy.com/free-vector/music
+Music Vectors by Vecteezy
 
 #icons
+thanks to fontawesome
+https://fontawesome.com/icons?d=gallery&m=free
 
+#structure and impetus
+thanks to Ibrahima Ndaw
+https://www.freecodecamp.org/news/build-a-pwa-from-scratch-with-html-css-and-javascript/
 
 #metronome 
-big thanks to 'Music and Coding' on YouTube and GitHub
+thanks to 'Music and Coding' on YouTube and GitHub
 https://github.com/musicandcode
 https://www.youtube.com/watch?v=f6dwSJ_n1cg
 Woodblock sound:
@@ -13,16 +19,13 @@ https://freewavesamples.com/woodblock
 The second click is this woodblock sound adjusted down in pitch.
 
 #keyboard 
-big thanks to 'Web Dev Simplified' on YouTube and GitHub
+thanks to 'Web Dev Simplified' on YouTube and GitHub
 https://www.youtube.com/watch?v=vjco5yKZpU8
 
 #ipa guide
-big thanks to the IPA https://www.internationalphoneticassociation.org/
+thanks to the IPA https://www.internationalphoneticassociation.org/
 all audio clips are from wikipedia with GNU licencing
 
 #planner
-big thanks to
+thanks to
 https://suryashakti1999.medium.com/to-do-list-app-using-javascript-for-absolute-beginners-13ea9e38a033
-and maybe...?
-https://www.codewithrandom.com/2021/09/countdown-timer-html-javascript-free.html
-https://www.cssscript.com/circular-countdown-timer-javascript-css3/
